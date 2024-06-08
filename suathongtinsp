@@ -1,0 +1,15 @@
+ void suaThongTinSanPham() {
+       int id;
+       cout << "Nhap ID san pham muon sua: ";
+       cin >> id;
+
+       for (int i = 0; i < soLuongSanPham; ++i) {
+        if (danhSachSanPham[i].layID() == id) {
+            cout << "Nhap thong tin moi cho san pham:\n";
+            danhSachSanPham[i].nhapThongTin();
+            cout << "Thong tin san pham da duoc cap nhat.\n";
+            return;
+        }
+    }
+    cout << "Khong tim thay san pham voi ID: " << id << endl;
+}
