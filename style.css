@@ -1,0 +1,89 @@
+/* Định dạng cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://i.pinimg.com/originals/9e/81/5b/9e815bb6a4a1451c2c388d80aa73b3f7.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    color: #ff6f61;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#yes-btn {
+    background: #ff6f61;
+    color: white;
+}
+
+#no-btn {
+    background: #ddd;
+    color: black;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+.effect h2 {
+    margin-top: 20px;
+    color: #27ae60;
+}
+
+.effect img {
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Điều chỉnh trên điện thoại */
+@media (max-width: 600px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+
+    .buttons button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
